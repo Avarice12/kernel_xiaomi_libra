@@ -2884,7 +2884,7 @@
 
 		msm_thermal_freq: qcom,vdd-apps-rstr{
 			qcom,vdd-rstr-reg = "vdd-apps";
-			qcom,levels = <768000 1248000 1824000>;
+			qcom,levels = <864000 1248000 1632000>;
 			qcom,freq-req;
 		};
 	};
@@ -2893,9 +2893,9 @@
 		compatible = "qcom,bcl";
 		qcom,bcl-enable;
 		qcom,bcl-framework-interface;
-		qcom,bcl-hotplug-list = <&CPU4 &CPU5>;
 		qcom,bcl-freq-control-list = <&CPU4 &CPU5>;
-		qcom,bcl-soc-hotplug-list = <&CPU4 &CPU5>;
+		qcom,bcl-hotplug-list = <&CPU3 &CPU5>;
+		qcom,bcl-soc-hotplug-list = <&CPU3 &CPU5>;
 		qcom,ibat-monitor {
 			qcom,low-threshold-uamp = <3400000>;
 			qcom,high-threshold-uamp = <4200000>;
